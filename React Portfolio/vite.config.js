@@ -7,5 +7,10 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
-  }
+  },
+  // build: {
+  //   rollupOptions: {
+  //     external: [`react-router-dom`], //externalize thsi module when building Vite = ignore it initially when building then add it on later
+  //   }
+  // }
 })
