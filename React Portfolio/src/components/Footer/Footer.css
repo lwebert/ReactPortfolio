@@ -1,0 +1,18 @@
+.foot-container {
+	display: flex;
+	flex: 1;
+}
+
+.foot-list {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	list-style: none;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.foot-item {
+	margin: auto;
+    flex: 1;
+}

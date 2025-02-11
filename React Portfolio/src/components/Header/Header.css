@@ -1,0 +1,9 @@
+/* CSS file name should be same as component you are styling */
+
+.container {
+	display: flex;
+}
+
+h1 {
+    margin: 15px;
+}
