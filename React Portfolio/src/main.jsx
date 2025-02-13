@@ -1,3 +1,4 @@
+// VANILLA REACT:
 // import { StrictMode } from 'react'
 // import { createRoot } from 'react-dom/client'
 // import './index.css'
@@ -15,8 +16,11 @@
 //   }
 // ])
 
+
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 import App from './App';
 import About from './pages/About';
@@ -37,16 +41,16 @@ const router = createBrowserRouter([
 				element: <About />,
 			},
 			{
-				path: '/Portfolio',
-				elemenet: <Porfolio />,
+				path: '/portfolio',
+				element: <Porfolio />,
 			},
 			{
-				path: '/Contact',
-				elemenet: <Contact />,
+				path: '/contact',
+				element: <Contact />,
 			},
 			{
-				path: '/Resume',
-				elemenet: <Resume />,
+				path: '/resume',
+				element: <Resume />,
 			},
 		],
 	},

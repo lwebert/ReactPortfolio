@@ -1,12 +1,29 @@
+//SETH:
+// export default function App() {
+// 	return (
+// 		<div></div>
+// 	);
+// };
+
+//Module 12-23:
+import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
 export default function App() {
 	return (
-		<div></div>
+		<div>
+			<Header>
+				<Navigation />
+			</Header>
+			<main className="mx-3">
+				<Outlet />
+			</main>
+			<Footer />
+		</div>
 	);
-};
-
-
-
+}
 
 // import { useState } from 'react';
 // import './App.css';
@@ -47,13 +64,9 @@ export default function App() {
 // export default function App() {
 // 	return (
 // 		// <RouterProvider router={router} />
-		
+
 // 	);
 // }
-
-
-
-
 
 //...Vanilla React...
 
