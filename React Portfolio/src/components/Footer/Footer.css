@@ -9,10 +9,43 @@
 	flex-direction: row;
 	list-style: none;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: center;
 }
 
 .foot-item {
+	align-items: center;
+	justify-content: center;
 	margin: auto;
-    flex: 1;
+	svg {
+		height: 35px;
+		width: 35px;
+	}
 }
+
+.foot-item a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.foot-item a:visited {
+	color: inherit;
+}
+
+/* TODO: style other icon */
+/* .copyright {
+} */
+
+/* .github {
+	svg {
+		height: 40px;
+		width: 40px;
+	}
+}
+
+.linkedin {
+	svg {
+		height: 40px;
+		width: 40px;
+	}
+} */
+

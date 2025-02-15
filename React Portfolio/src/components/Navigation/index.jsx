@@ -6,13 +6,13 @@ export default function Navigation() {
 
 	return (
 		<div className="nav-container">
-			{/* <ul className="nav-list"> */}
-			<ul className="nav nav-tabs">
+			<ul className="nav-list">
+			{/* <ul className="nav nav-tabs"> */}
 				<li className="nav-item">
 					<Link
 						to="/"
 						className={
-							currentPage === '/' ? 'nav-link active' : 'nav-link'
+							currentPage === '/' ? 'nav-item active' : 'nav-item'
 						}>
 						About Me
 					</Link>
@@ -23,8 +23,8 @@ export default function Navigation() {
 						to="/portfolio"
 						className={
 							currentPage === '/portfolio'
-								? 'nav-link active'
-								: 'nav-link'
+								? 'nav-item active'
+								: 'nav-item'
 						}>
 						Portfolio
 					</Link>
@@ -35,8 +35,8 @@ export default function Navigation() {
 						to="/contact"
 						className={
 							currentPage === '/contact'
-								? 'nav-link active'
-								: 'nav-link'
+								? 'nav-item active'
+								: 'nav-item'
 						}>
 						Contact
 					</Link>
@@ -47,8 +47,8 @@ export default function Navigation() {
 						to="/resume"
 						className={
 							currentPage === '/resume'
-								? 'nav-link active'
-								: 'nav-link'
+								? 'nav-item active'
+								: 'nav-item'
 						}>
 						Resume
 					</Link>

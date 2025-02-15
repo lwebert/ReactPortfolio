@@ -1,6 +1,6 @@
 /* CSS file name should be same as component you are styling */
 
-.container {
+.header-container {
 	display: flex;
 }
 
