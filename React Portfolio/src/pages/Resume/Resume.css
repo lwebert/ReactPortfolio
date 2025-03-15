@@ -1,6 +1,21 @@
 .resume {
-	svg {
-		height: 40px;
-		width: 40px;
-	}
+	 width: 75%;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+}
+
+.resume-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	/* object-fit: cover; */
+	/* border: none; */
 }

@@ -7,12 +7,12 @@ import './App.css';
 
 export default function App() {
 	return (
-		<div>
+		<div className="app-container">
 			<Header>
 				<Navigation />
 			</Header>
 			{/* <main> */}
-			<main className="container">
+			<main className="page-container">
 				<Outlet />
 			</main>
 			<Footer />

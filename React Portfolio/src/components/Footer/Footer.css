@@ -1,6 +1,7 @@
 .foot-container {
 	display: flex;
-	flex: 1;
+	/* flex: 1; */
+	margin: 40px 0 20px 0;
 }
 
 .foot-list {
@@ -30,6 +31,8 @@
 .foot-item a:visited {
 	color: inherit;
 }
+
+
 
 /* TODO: style other icon */
 /* .copyright {

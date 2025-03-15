@@ -8,20 +8,24 @@
 	justify-content: center;
 	flex: 1;
 
-	img {
-		/* display: flex; */
-		/* align-items: center; */
-		height: 120px;
-		width: 120px;
-		border-radius: 60px;
-		box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
-	}
-
 	p {
 		text-align: left;
+		width: 100%;
 	}
 }
 
-/* .about-container:hover {
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} */
+.img-container {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
+
+	img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		position: absolute;
+	}
+}
