@@ -2,24 +2,23 @@ import './Project.css';
 import { PropTypes } from 'prop-types';
 
 export default function Project({
-	name,
+	title,
+	deployedUrl,
 	gitHub,
-	description,
 	projclass,
+	image,
 }) {
 	return (
 		<div className={projclass + ' ' + 'project-container'}>
-			<div>{name}</div>
-			<div>{description}</div>
-
+			<div>{title}</div>
 			<a href={gitHub}>repo link</a>
 		</div>
 	);
 }
 
-Project.propTypes = {
-	name: PropTypes.string.isRequired,
-	gitHub: PropTypes.string.isRequired,
-	description: PropTypes.string.isRequired,
-	projclass: PropTypes.string.isRequired,
-};
+// Project.propTypes = {
+// 	name: PropTypes.string.isRequired,
+// 	gitHub: PropTypes.string.isRequired,
+// 	description: PropTypes.string.isRequired,
+// 	projclass: PropTypes.string.isRequired,
+// };

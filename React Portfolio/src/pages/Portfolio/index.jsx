@@ -4,55 +4,44 @@ import Project from '../../components/Project';
 export default function Portfolio() {
 	const projectArray = [
 		{
-			name: 'My Movie Critic',
-			url: 'https://lwebert.github.io/Project1-Team2/',
+			title: 'My Movie Critic',
+			deployedUrl: 'https://lwebert.github.io/Project1-Team2/',
 			gitHub: 'https://github.com/lwebert/Project1-Team2',
 			projclass: 'my-movie-critic',
-			description:
-				'A Realty Management Tool. This app is intended for private property owners who want to advertise their properties, manage their tenants and manage their real estate all in one place. This application also functions as a hub for tenants to access their property and pay their rent.',
+			image: 'my-movie-critic.jpg'
 		},
 		{
-			name: 'Weather Dashboard API',
-			url: '',
+			title: 'Weather Dashboard API',
+			deployedUrl: 'https://challenge-09-weather-apis.onrender.com',
 			gitHub: 'https://github.com/lwebert/Challenge-09-WeatherDashboard',
 			projclass: 'weather-dashboard',
 			image: 'food-festival.jpg',
-			description:
-				'A modularized progressive web application that allows users to view daily schedules, testimonials, view ticket pricing information, and purchase tickets all without having the dependency of consistent internet connectivity.',
 		},
 		{
-			name: 'SQL Employee Tracker',
-			url: '',
+			title: 'SQL Employee Tracker',
+			deployedUrl: '',
 			gitHub: 'https://github.com/lwebert/Challenge-10-EmployeeTracker',
 			projclass: 'employee-tracker',
 			image: 'budget-tracker.jpg',
-			description:
-				'Giving users a fast and easy way to track their money is important, but allowing them to access that information at any time is even more important. Having offline functionality is paramount to the success of an application that handles users financial information. With that in mind, enter Budget Tracker. A Progressive Web Application that uses a noSQL database and offline persistance to deliver the ultimate end user experience for budgeting on the go.',
 		},
         {
-			name: 'My Movie Critic',
-			url: 'https://lwebert.github.io/Project1-Team2/',
+			title: 'Truck-A-Licious',
+			deployedUrl: 'https://truck-a-licious.onrender.com',
 			gitHub: 'https://github.com/lwebert/Project1-Team2',
 			projclass: 'my-movie-critic',
-			description:
-				'A Realty Management Tool. This app is intended for private property owners who want to advertise their properties, manage their tenants and manage their real estate all in one place. This application also functions as a hub for tenants to access their property and pay their rent.',
 		},
-        {
-			name: 'My Movie Critic',
-			url: 'https://lwebert.github.io/Project1-Team2/',
-			gitHub: 'https://github.com/lwebert/Project1-Team2',
-			projclass: 'my-movie-critic',
-			description:
-				'A Realty Management Tool. This app is intended for private property owners who want to advertise their properties, manage their tenants and manage their real estate all in one place. This application also functions as a hub for tenants to access their property and pay their rent.',
-		},
-        {
-			name: 'My Movie Critic',
-			url: 'https://lwebert.github.io/Project1-Team2/',
-			gitHub: 'https://github.com/lwebert/Project1-Team2',
-			projclass: 'my-movie-critic',
-			description:
-				'A Realty Management Tool. This app is intended for private property owners who want to advertise their properties, manage their tenants and manage their real estate all in one place. This application also functions as a hub for tenants to access their property and pay their rent.',
-		},
+        // {
+		// 	title: 'My Movie Critic',
+		// 	deployedUrl: 'https://lwebert.github.io/Project1-Team2/',
+		// 	gitHub: 'https://github.com/lwebert/Project1-Team2',
+		// 	projclass: 'my-movie-critic',
+		// },
+        // {
+		// 	title: 'My Movie Critic',
+		// 	deployedUrl: 'https://lwebert.github.io/Project1-Team2/',
+		// 	gitHub: 'https://github.com/lwebert/Project1-Team2',
+		// 	projclass: 'my-movie-critic',
+		// },
 	];
 
 	return (
