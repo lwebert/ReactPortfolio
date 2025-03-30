@@ -1,19 +1,20 @@
 import './Contact.css';
 import { useState } from 'react';
 
+import { validateEmail } from '../../utils/helpers';
+
 export default function Contact() {
 	const [contactName, setContactName] = useState('');
 	const [contactEmail, setContactEmail] = useState('');
 	const [contactMessage, setContactMessage] = useState('');
 
-	const [errors, setErrors] = useState({}); // To store validation errors
+	const [errors, setErrors] = useState(''); // To store validation errors
 
 	const handleInputChange = (e) => {
 		const { name, value } = e.target;
 		// const { target } = e;
 		// const inputname = target.name;
 		// const inputvalue = target.value;
-		setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
 
 		if (name === 'contact-name') {
 			return setContactName(value);
@@ -22,64 +23,63 @@ export default function Contact() {
 		} else if (name === 'contact-message') {
 			return setContactMessage(value);
 		}
-
-	};
-
-	const handleBlur = (e) => {
-		const { name, value } = e.target;
-
-		if (!value.trim()) {
-			setErrors((prevErrors) => ({
-				...prevErrors,
-				[name]: `${name} is required.`,
-			}));
-		}
 	};
 
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
+		console.log(
+			'Name: ',
+			contactName,
+			'Email: ',
+			contactEmail,
+			'Message: ',
+			contactMessage
+		);
 
 		//TODO: Error handling for input validation? Look at 12-16 for ideas.
-		let newErrors = {};
-
-		if (!contactName.trim()) newErrors['contact-name'] = 'Name is required.';
-		if (!contactEmail.trim())
-			newErrors['contact-email'] = 'Email is required.';
-		if (!contactMessage.trim())
-			newErrors['contact-message'] = 'Message is required.';
-
-		if (Object.keys(newErrors).length > 0) {
-			setErrors(newErrors);
+		if (contactName == '' || !contactName) {
+			setErrors('Please provide a contact name.');
+			return;
+		} else if (!validateEmail(contactEmail) || !contactEmail) {
+			setErrors('Email input is invalid.');
+			return;
+		} else if (contactMessage == '' || !contactMessage) {
+			setErrors('Please provide a message.');
 			return;
 		}
 
-		//
+		// if (errors == '' || !errors) {
+		setErrors('');
 
 		alert(`${contactName}, thank you for your message!`);
 
 		setContactName('');
 		setContactEmail('');
 		setContactMessage('');
+		setErrors('');
+		// }
 	};
 
 	return (
-		// <div className="contact-container">
-		<div className="contact-container text-center">
-			<div className="contact-header">Contact Me!</div>
+		<div className="contact-container">
+			{/* <div className="contact-container text-center"> */}
+			<h3 className="contact-header">Contact Me!</h3>
 			<form className="form" onSubmit={handleFormSubmit}>
+				<label>Name:</label>
 				<input
 					value={contactName}
 					name="contact-name"
 					onChange={handleInputChange}
 					type="text"
+					// placeholder="Enter your name here."
 					id="contact-name"
-					//
-					onBlur={handleBlur}
+					// onBlur={handleBlur}
 				/>
-				{errors['contact-name'] && (
+				{/* {errors['contact-name'] && (
 					<p className="error">{errors['contact-name']}</p>
-				)}
+				)} */}
 
+				<label>Email:</label>
 				<input
 					value={contactEmail}
 					name="contact-email"
@@ -87,12 +87,13 @@ export default function Contact() {
 					type="email"
 					placeholder="name@example.com"
 					id="contact-email"
-					onBlur={handleBlur}
+					// onBlur={handleBlur}
 				/>
-				{errors['contact-email'] && (
+				{/* {errors['contact-email'] && (
 					<p className="error">{errors['contact-email']}</p>
-				)}
+				)} */}
 
+				<label>Message:</label>
 				<input
 					value={contactMessage}
 					name="contact-message"
@@ -100,14 +101,20 @@ export default function Contact() {
 					type="text"
 					placeholder="Enter your message here."
 					id="contact-message"
-					onBlur={handleBlur}
+					// onBlur={handleBlur}
 				/>
-				{errors['contact-message'] && (
+				{/* {errors['contact-message'] && (
 					<p className="error">{errors['contact-message']}</p>
-				)}
+				)} */}
 
 				<button type="submit">Submit</button>
 			</form>
+
+			{errors ? (
+				<div>
+					<p className="error-text">{errors}</p>
+				</div>
+			) : null}
 		</div>
 	);
 }

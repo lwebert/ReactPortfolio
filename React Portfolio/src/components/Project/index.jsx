@@ -1,5 +1,7 @@
 import './Project.css';
-import { PropTypes } from 'prop-types';
+import { FaGithub } from 'react-icons/fa';
+
+// import { PropTypes } from 'prop-types';
 
 export default function Project({
 	title,
@@ -9,10 +11,23 @@ export default function Project({
 	image,
 }) {
 	return (
-		<div className={projclass + ' ' + 'project-container'}>
-			<div>{title}</div>
-			<a href={gitHub}>repo link</a>
+		<div
+			className={'project-container'}
+			style={{ backgroundImage: `url('${image}')` }}>
+			<div className="project-info">
+				{/* <h4>{title}</h4> */}
+				<a href={deployedUrl} target="_blank">
+					{title}
+				</a>
+				<a href={gitHub} target="_blank">
+					<FaGithub height="15px" width="15px" />
+				</a>
+			</div>
 		</div>
+		// <div className='project-container' id={projclass}>
+		// 	<div>{title}</div>
+		// 	<a href={gitHub}>repo link</a>
+		// </div>
 	);
 }
 

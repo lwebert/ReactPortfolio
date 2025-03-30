@@ -3,7 +3,6 @@ import resumePDF from '../../assets/Resume_forPortfolio_3-15-25.pdf';
 
 export default function Resume() {
 	return (
-		// <div>
 		<div className="resume">
 			<p>
 				Click here for resume:{' '}
@@ -16,6 +15,5 @@ export default function Resume() {
 				<iframe src={resumePDF} title="Resume" />
 			</div>
 		</div>
-		// </div>
 	);
 }

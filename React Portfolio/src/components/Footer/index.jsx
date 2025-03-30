@@ -14,13 +14,13 @@ export default function Footer() {
 				))} */}
 
 				{/* //TODO: Put a logo instead of text inside the a tags, update hrefs for links */}
-				<div className="foot-item copyright" key="Copyright">
+				{/* <div className="foot-item copyright" key="Copyright">
 					<a href="https://Google.com" target="_blank">
 						<img
 							src="../src/assets/react.svg"
 							alt="Copyright logo"></img>
 					</a>
-				</div>
+				</div> */}
 
 				<div className="foot-item github" key="GitHub">
 					<a href="https://github.com/lwebert" target="_blank">
