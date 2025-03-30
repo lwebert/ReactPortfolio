@@ -1,4 +1,5 @@
 import './About.css';
+import LaurenImg from '../../assets/Lauren.jpg'
 
 export default function About() {
 	return (
@@ -7,7 +8,7 @@ export default function About() {
 
 			<div className="img-container">
 				<img
-					src="../src/assets/Lauren.jpg"
+					src={LaurenImg}
 					alt="Photo of Lauren Webert"
 				/>
 			</div>

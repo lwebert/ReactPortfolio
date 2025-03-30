@@ -14,6 +14,13 @@ export default function Resume() {
 			<div className="resume-container">
 				<iframe src={resumePDF} title="Resume" />
 			</div>
+
+			<div>
+				<h5>Proficiencies</h5>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
 		</div>
 	);
 }

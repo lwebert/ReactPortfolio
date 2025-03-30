@@ -19,21 +19,20 @@ This is a React application that serves as a portfolio. Users are directed to th
 To install the application locally, do the following in your terminal:
 
 1. Clone the repository to your local computer.  
-   `git clone git@github.com:lwebert/Challenge-14-Kanban.git`
+   `git clone git@github.com:lwebert/Challenge-12-ReactPortfolio.git`
 2. Check that node.js is installed.  
    `node -v`
 3. Install dependencies.  
    `npm i`
 
 ## Usage
-The application is deployed to Render, and can be found [here](https://challenge-14-kanban.onrender.com/).
+The application is deployed to Netflify, and can be found [here](https://webert-portfolio.netlify.app/).
 
 
 To run the application locally, open an instance of the application in your terminal. 
 Run the following:
 1. `npm run build`.
-2. `npm run seed`.
-3. `npm run start`. Open the application in your browser at http://localhost:3000/.
+2. `npm run start`. Open the application in your browser at http://localhost:3000/.
 
 
 ## Contributing
@@ -51,9 +50,9 @@ Make local changes to push up.
 4. Create a pull request to merge your changes
 
 ## Tests
-The application is working correctly if the user is able to login to the application, create new tickets, move tickets to different columns of the board, edit existing tickets, and delete existing tickets without any errors.
+The application is working correctly if the user is able to render the application without any errors. They should be directed to the About Me page with a header, naviagation panel, and a footer. Clicking on the navigation tabs should take the user to the corresponding page. 
 
-![Kanban board application after user login.](./assets/KanbanApplication.jpg).
+![About Me page.]().
 
 ## License
 The application is covered under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).   

@@ -25,30 +25,46 @@ export default function Contact() {
 		}
 	};
 
+	const handleBlur = (e) => {
+		setErrors('');
+
+		const { name, value } = e.target;
+
+		console.log('name: ', name, 'value: ', value);
+		if (value === undefined || value === null || !value || value === '') {
+			if (name === 'contact-name') {
+				setErrors(`Name is a required field.`);
+				return;
+			} else if (name === 'contact-email') {
+				setErrors(`Email is a required field.`);
+				return;
+			} else if (name === 'contact-message') {
+				setErrors(`Message is a required field.`);
+				return;
+			}
+		}
+	};
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
-		console.log(
-			'Name: ',
-			contactName,
-			'Email: ',
-			contactEmail,
-			'Message: ',
-			contactMessage
-		);
 
-		//TODO: Error handling for input validation? Look at 12-16 for ideas.
-		if (contactName == '' || !contactName) {
-			setErrors('Please provide a contact name.');
-			return;
-		} else if (!validateEmail(contactEmail) || !contactEmail) {
+		// if (contactName == '' || !contactName) {
+		// 	setErrors('Please provide a contact name.');
+		// 	return;
+		// } else if (!validateEmail(contactEmail) || !contactEmail) {
+		// 	setErrors('Email input is invalid.');
+		// 	return;
+		// } else if (contactMessage == '' || !contactMessage) {
+		// 	setErrors('Please provide a message.');
+		// 	return;
+		// }
+
+		handleBlur(e);
+
+		if (!validateEmail(contactEmail) || !contactEmail) {
 			setErrors('Email input is invalid.');
 			return;
-		} else if (contactMessage == '' || !contactMessage) {
-			setErrors('Please provide a message.');
-			return;
 		}
-
-		// if (errors == '' || !errors) {
+		
 		setErrors('');
 
 		alert(`${contactName}, thank you for your message!`);
@@ -57,12 +73,10 @@ export default function Contact() {
 		setContactEmail('');
 		setContactMessage('');
 		setErrors('');
-		// }
 	};
 
 	return (
 		<div className="contact-container">
-			{/* <div className="contact-container text-center"> */}
 			<h3 className="contact-header">Contact Me!</h3>
 			<form className="form" onSubmit={handleFormSubmit}>
 				<label>Name:</label>
@@ -73,11 +87,8 @@ export default function Contact() {
 					type="text"
 					// placeholder="Enter your name here."
 					id="contact-name"
-					// onBlur={handleBlur}
+					onBlur={handleBlur}
 				/>
-				{/* {errors['contact-name'] && (
-					<p className="error">{errors['contact-name']}</p>
-				)} */}
 
 				<label>Email:</label>
 				<input
@@ -87,11 +98,8 @@ export default function Contact() {
 					type="email"
 					placeholder="name@example.com"
 					id="contact-email"
-					// onBlur={handleBlur}
+					onBlur={handleBlur}
 				/>
-				{/* {errors['contact-email'] && (
-					<p className="error">{errors['contact-email']}</p>
-				)} */}
 
 				<label>Message:</label>
 				<input
@@ -101,11 +109,8 @@ export default function Contact() {
 					type="text"
 					placeholder="Enter your message here."
 					id="contact-message"
-					// onBlur={handleBlur}
+					onBlur={handleBlur}
 				/>
-				{/* {errors['contact-message'] && (
-					<p className="error">{errors['contact-message']}</p>
-				)} */}
 
 				<button type="submit">Submit</button>
 			</form>

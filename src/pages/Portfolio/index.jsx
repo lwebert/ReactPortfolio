@@ -5,6 +5,7 @@ import myMovieCriticImg from '../../assets/my-movie-critic.jpg';
 import weatherDashboardImg from '../../assets/weather-dashboard.jpg';
 import kanbanBoardImg from '../../assets/kanban-board.jpg';
 import truckALiciousImg from '../../assets/truckAlicious.jpg';
+import laurenImg from '../../assets/Lauren.jpg'
 
 export default function Portfolio() {
 	const projectArray = [
@@ -41,14 +42,14 @@ export default function Portfolio() {
 			deployedUrl: '',
 			gitHub: '',
 			projclass: 'comingSoon',
-			image: comingSoonImg,
+			image: laurenImg,
 		},
 		{
 			title: 'Coming-Soon',
 			deployedUrl: 'https://truck-a-licious.onrender.com',
 			gitHub: 'https://github.com/lwebert/Project2-Group3',
 			projclass: 'comingSoon',
-			image: comingSoonImg,
+			image: laurenImg,
 		},
 	];
 
