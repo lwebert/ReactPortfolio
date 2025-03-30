@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
-This is a React application that serves as a portfolio. Users are directed to the About Me page upon loading the application, and can use the navigation bar to view the Portfolio page, Contact page, and Resume page. The application is deployed to Netflify and utilizes .
+This is a React application that serves as a portfolio. Users are directed to the About Me page upon loading the application, and can use the navigation bar to view the Portfolio page, Contact page, and Resume page. The application is deployed to Netflify and utilizes React.
 
 
 ## Table of Contents
