@@ -32,7 +32,8 @@ The application is deployed to Netflify, and can be found [here](https://webert-
 To run the application locally, open an instance of the application in your terminal. 
 Run the following:
 1. `npm run build`.
-2. `npm run start`. Open the application in your browser at http://localhost:3000/.
+2. `npm run start`. 
+3. Open the application in your browser at http://localhost:3000/.
 
 
 ## Contributing
@@ -52,7 +53,7 @@ Make local changes to push up.
 ## Tests
 The application is working correctly if the user is able to render the application without any errors. They should be directed to the About Me page with a header, naviagation panel, and a footer. Clicking on the navigation tabs should take the user to the corresponding page. 
 
-![About Me page.]().
+![About Me page.](./src/assets/AboutMePage.jpg).
 
 ## License
 The application is covered under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).   
