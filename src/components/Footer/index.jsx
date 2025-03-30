@@ -1,6 +1,8 @@
 import './Footer.css';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
+import { FaInstagram } from "react-icons/fa";
+
 
 export default function Footer() {
 	// const footers = ['GitHub', 'LinkedIn', 'Copyright'];
@@ -33,6 +35,14 @@ export default function Footer() {
 						href="https://linkedin.com/in/lauren-webert"
 						target="_blank">
 						<FaLinkedin height="15px" width="15px" />
+					</a>
+				</div>
+
+				<div className="foot-item instagram" key="Instagram">
+					<a href="https://www.instagram.com/lauren.webert/?locale=en_US%2Cen_US"
+						target="_blank">
+						<FaInstagram height="15px" width="15px" />
+
 					</a>
 				</div>
 			</div>
