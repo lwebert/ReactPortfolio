@@ -36,6 +36,20 @@ export default function Portfolio() {
 			projclass: 'truckAlicious',
 			image: truckALiciousImg,
 		},
+		{
+			title: 'Coming-Soon',
+			deployedUrl: '',
+			gitHub: '',
+			projclass: 'comingSoon',
+			image: comingSoonImg,
+		},
+		{
+			title: 'Coming-Soon',
+			deployedUrl: 'https://truck-a-licious.onrender.com',
+			gitHub: 'https://github.com/lwebert/Project2-Group3',
+			projclass: 'comingSoon',
+			image: comingSoonImg,
+		},
 	];
 
 	projectArray.map((project) => console.log(project.image));
