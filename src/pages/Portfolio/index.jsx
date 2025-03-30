@@ -46,8 +46,8 @@ export default function Portfolio() {
 		},
 		{
 			title: 'Coming-Soon',
-			deployedUrl: 'https://truck-a-licious.onrender.com',
-			gitHub: 'https://github.com/lwebert/Project2-Group3',
+			deployedUrl: '',
+			gitHub: '',
 			projclass: 'comingSoon',
 			image: laurenImg,
 		},
