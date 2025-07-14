@@ -19,7 +19,7 @@ This is a React application that serves as a portfolio. Users are directed to th
 To install the application locally, do the following in your terminal:
 
 1. Clone the repository to your local computer.  
-   `git clone git@github.com:lwebert/Challenge-12-ReactPortfolio.git`
+   `git clone git@github.com:lwebert/ReactPortfolio.git`
 2. Check that node.js is installed.  
    `node -v`
 3. Install dependencies.  
